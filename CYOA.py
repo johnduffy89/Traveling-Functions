@@ -66,16 +66,44 @@ def iggy2():
 def r1():
     print("You discover that the research facility is actually a secret international coaltion. The real reason they are researching isn't because of the ice caps.")
     print("The real reason they are there is because there is an alien colony deep underneath the ice. You discover that these aliens have been the source of the recent surge of technological innovation.")
+    print("After you discover this, you are given another choice. Do you think the researchers should learn from the aliens or try to destroy them?")
+    foop = input("Choose 1 for learn or 2 for destroy")
+    if (foop == "1"):
+        boice1()
+    elif(foop == "2"):
+        boice2()
+    else:
+        print("invalid")
 
 def r2():
     print("You learn nothing and spend the rest of the trip being bored. GAME OVER.")
               
 def a1():
     print("You go outside and see a 15 foot tall polar bear. You decide to run as fast as you can to the nearby research facility. The polar bear begins to chase you.")
-    print("As you are running away, the polar bear begins to gain on you. It gets you and you die. GAME OVER")
+    print("As you are running away, the polar bear begins to gain on you. You see a hole that leads to ice water but you think you can get away through it. Do you try to run into the research facility or jump into the water?")
+    pb = input("Choose 1 for 
+    if(pb == "1"):
+        rf()
+    elif(pb == "2"):
+        rf1()
+    else:
+        print("invalid")
 
 def a2():
     print("You go back to bed and get attacked by a polar bear. GAME OVER.")
+
+def boice1():
+    print("Learn")
+
+def boice2():
+    print("Destroy")
+
+def rf()
+
+def rf1()
+        
+
+
 
 intro()
 setup()
