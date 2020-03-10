@@ -81,7 +81,7 @@ def r2():
 def a1():
     print("You go outside and see a 15 foot tall polar bear. You decide to run as fast as you can to the nearby research facility. The polar bear begins to chase you.")
     print("As you are running away, the polar bear begins to gain on you. You see a hole that leads to ice water but you think you can get away through it. Do you try to run into the research facility or jump into the water?")
-    pb = input("Choose 1 for 
+    pb = input("Choose 1 to run to the facility and 2 to jump in the water")
     if(pb == "1"):
         rf()
     elif(pb == "2"):
@@ -93,17 +93,52 @@ def a2():
     print("You go back to bed and get attacked by a polar bear. GAME OVER.")
 
 def boice1():
-    print("Learn")
+    print("You have decided to learn. The aliens are led by an ancient fore called Xenu. Xenu trapped billions of people in earth 75 million years ago.")
+    print("He stored them in volcanoes and killed them with hydrogen bombs. The thetans, or spirits of these humans, attached themselves to these ancient life forms deep below Earth's surface at the bottom of the ocean.")
 
 def boice2():
     print("Destroy")
 
-def rf()
+def rf():
+    print("You continue to run with all your might. The closer you get, the more the polar bear gains on you.")
+    print("You're about to reach the door when you realize it's closed. As you reach the door, do you bang on the door or look for another entrance?")
+    sd = input("Choose 1 to bang on the door and 2 to look for another entrance: ")
+    if(sd == "1"):
+        ab()
+    elif(sd == "2"):
+        bc()
+    else:
+        print("invalid")
 
-def rf1()
-        
+def rf1():
+    print("As you jump in the water, the polar bear jumps in after you. As the polar bear is about to attack you, a waddle of penguins come swimming in to save you. They beat up the polar bear and send it home.")
+    print("You come out of the water and the penguins meet you on the shore. They greet you and you feel obligated to follow them.")
+    peng = input("Choose 1 to join the penguins and 2 to go back to the igloo: ")
+    if(peng == "1"):
+        cd()
+    elif(peng == "2"):
+        de()
+    else:
+        print("invalid")
+def ab():
+    print("You bang on the door and can't hear anything. You pound and no one comes. The polar bear gets you. GAME OVER.")
 
+def cd():
+    print("You follow the penguins back to their colony. They huddle around you to keep you warm. You feel very welcome with the penguins.")
+    print("They welcome you and give a fish to eat. Do you accept their invitation and take the fish or reject it and try to get home?")
+    ball = input("Choose 1 for yes and 2 for no: ")
+    if(ball == "1"):
+        abe()
+    elif(ball == "2"):
+        ace()
+    else:
+        print("invalid")
 
+def de():
+    print("You walk back to igloo. Because you had just jumped in the water, you freeze on the walk back. GAME OVER.") 
 
+def abe():
+    print("The penguins crowd around you and lift you up. They will not let you leave. You are now The Penguin King")
+    
 intro()
 setup()
