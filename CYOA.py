@@ -81,7 +81,7 @@ def r2():
 def a1():
     print("You go outside and see a 15 foot tall polar bear. You decide to run as fast as you can to the nearby research facility. The polar bear begins to chase you.")
     print("As you are running away, the polar bear begins to gain on you. You see a hole that leads to ice water but you think you can get away through it. Do you try to run into the research facility or jump into the water?")
-    pb = input("Choose 1 to run to the facility and 2 to jump in the water")
+    pb = input("Choose 1 to run to the facility and 2 to jump in the water: ")
     if(pb == "1"):
         rf()
     elif(pb == "2"):
@@ -95,9 +95,51 @@ def a2():
 def boice1():
     print("You have decided to learn. The aliens are led by an ancient fore called Xenu. Xenu trapped billions of people in earth 75 million years ago.")
     print("He stored them in volcanoes and killed them with hydrogen bombs. The thetans, or spirits of these humans, attached themselves to these ancient life forms deep below Earth's surface at the bottom of the ocean.")
+    print("After learning this information, they let you join them.")
+    alien = input("Choose 1 to accept the invitation or 2 to fight the aliens.")
+    if(alien == "1"):
+        endgame()
+    elif(alien == "2"):
+        boice2()
+    else:
+        print("invalid")
+
+def endgame():
+    print("You accept their invitation and go to their civlization. You go under the ice in a submarine to meet them. You are nervous on the way down.")
+    print("As you get to the bottom, you are unsure of how safe this is. You get out of the submarine and see the aliens.")
+    print("Standing in front of you are the penguins. These flightless birds are the real aliens and are immensely smarter than they let on.")
+    print("Hello, We have been waiting for you")
+    
+  
 
 def boice2():
-    print("Destroy")
+    print("By choosing to destroy them, you have started a war. The aliens will not roll over and die. This is their planet now and they are angry.")
+    print("Now there is a war for the planet. Every country will need to fight. They need to be warned of what you did. Do you take the blame or try to blame someone else? ")
+    yn = input("Choose 1 for take the blame or 2 for blaming someone else: ")
+    if(yn == "1"):
+        blame()
+    elif(yn == "2"):
+        fight()
+    else:
+        print("invalid")
+
+def blame():
+    print("When informing the global leaders of what happened, you blame someone else. No one believes you. Now they cant trust you for lying. They throw you out into the wilderness.")
+    print("You see an igloo in the distance and penguins in the opposite direction. Do you follow the penguins or go to the igloo?")
+    cho3 = input("Choose 1 for the igloo or 2 for the penguins.")
+    if(cho3 == "1"):
+          tp()
+    elif(cho3 == "2"):
+          cd()
+    else:
+        print("invalid")
+          
+
+def fight():
+    print("You take the blame yourself and the leaders respect your honesty. They allow you to join the fight but you're on the front lines. The next day, you go in.")
+    print("As you begin the voyage under the ice, things start to get strange. Your technology starts to get faulty. As you get deeper, it sets in that you are terrible outgunned.")
+    print("These are freaking aliens and all you have is a faulty gun. As you finally see the aliens, they destroy you. GAME OVER.")
+
 
 def rf():
     print("You continue to run with all your might. The closer you get, the more the polar bear gains on you.")
@@ -138,7 +180,7 @@ def de():
     print("You walk back to igloo. Because you had just jumped in the water, you freeze on the walk back. GAME OVER.") 
 
 def abe():
-    print("The penguins crowd around you and lift you up. They will not let you leave. You are now The Penguin King")
+    print("The penguins crowd around you and lift you up. They will not let you leave. You are crowned with six pack rings. You are now The Penguin King. YOU WIN.")
     
 intro()
 setup()
